@@ -34,7 +34,7 @@ zeta = 1e-4
 
 # Extração dos auto-valores e auto-vetores
 [W,V]=eig(K,M)
-
+print(W)
 # Normalização dos auto-vetores pela massa
 V= V / m_eq**.5
 
@@ -42,7 +42,7 @@ V= V / m_eq**.5
 W=np.sqrt(W) 
 
 # teste
-print(W, V)
+#print(W, V)
 
 
 #Parte III - Cálculo das funções resposta em frequência (correspondem à primeira coluna da matriz de transferência, pois todas as entradas de força, exceto f1 são nulas, não havendo assim utilidade)
