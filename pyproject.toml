@@ -6,10 +6,11 @@ authors = ["Gustavo Costa de Matos <gu_costa_matos@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10.9"
+python = ">=3.10.9,<3.13"
 pandas = "^2.0.2"
 numpy = "^1.25.0"
 matplotlib = "^3.7.1"
+scipy = "^1.11.0"
 
 
 [build-system]
