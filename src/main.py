@@ -84,7 +84,7 @@ inf2,sup2,margem2=np.rad2deg([inf2,sup2, .1* abs( sup2- inf2)])
 
 #Plotagem dos valores - loop para cada G.L. do sistema
 for i in range(N):
-
+#aaa
     plt.figure(i)
     plt.subplot(2,1,1)
     plt.loglog(w_domain,np.abs(Hs[:,i]), color='blue')
