@@ -33,8 +33,8 @@ K = k_eq * np.asarray([[2,-1,0], [-1,2,-1],[0,-1,1]]) # Matriz rigidez
 zeta = 1e-4
 
 # Extração dos auto-valores e auto-vetores
-[W,V]=eig(K,M)
-print(W)
+W, V= eig(K, M)
+
 # Normalização dos auto-vetores pela massa
 V= V / m_eq**.5
 
@@ -83,7 +83,7 @@ inf2, sup2 = np.min(Hs_phase) , np.max(Hs_phase)
 inf2,sup2,margem2=np.rad2deg([inf2,sup2, .1* abs( sup2- inf2)])
 
 #Plotagem dos valores - loop para cada G.L. do sistema
-for i in range(N):
+for i in range(GL):
 #aaa
     plt.figure(i)
     plt.subplot(2,1,1)
